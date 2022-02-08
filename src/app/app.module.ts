@@ -1,14 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MenuComponent } from './shared/menu/menu.component';
+import { GraficasModule } from './graficas/graficas.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    GraficasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
